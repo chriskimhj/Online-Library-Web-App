@@ -1,0 +1,27 @@
+<%- include ("../partials/header") %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/newComment.css">
+
+<div class="container" id="commentBox">
+	<div class="thumbnail">
+		<div class="caption-full">
+			<h2><strong>Adding a New Comment to</strong> <em><%- book.name %></em></h1>
+			<div>
+				<form action="/books/<%- book._id %>/comments" method="POST">
+					<div class="form-group">
+						<textarea class="form-control commentText" name="comment[text]" placeholder="your comment..."></textarea>
+					</div>
+					<div class="form-group">
+						<input class="form-control commentText" type="text" name="comment[author]" placeholder="author">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-lg btn-primary btn-block commentText"><strong>SUBMIT</strong></button>
+					</div>
+				</form>
+				<a class="commentText" href="/books/<%- book._id %>">Go Back</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include ("../partials/footer") %>

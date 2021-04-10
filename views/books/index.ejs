@@ -1,0 +1,41 @@
+<%- include ("../partials/header") %>
+
+<link rel="stylesheet" href="/stylesheets/index.css">
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h2><strong>Welcome To...</strong></h2>
+			<h1 class="text-center pull-center" id="webTitle">The Netizen's BookCase</h1>
+			<hr>
+			<em>
+				<p class="pull-right">The One Stop Online Library for the Modern-Day Bookwor- <em>...Netizen*</em></p>
+				<p class="pull-right">Explore Our Collection Of Books and Leave a Like or Comment!</p>
+			</em>
+		</div>
+	</header>
+	<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+		<% books.forEach(function(book){ %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<div class="caption">
+						<p id="bookTitle"><strong><%-book.name%></strong></p>
+						<p id="bookAuthor"><em><%-book.author%></em></p>
+						<p id="bookLikes"><em><i class="far fa-heart"></i>&nbsp<%-book.likes%></em></p>
+						<a href="/books/<%-book._id%>" class="btn btn-success btn-sm"><strong>READ</strong> </a>
+					</div>
+				</div>
+			</div>
+		<% }); %>
+	</div>
+</div>
+
+<script type="text/javascript" src="/assets/index.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous">
+ </script>
+ <script type="text/javascript" src="bootstrap.js"></script>
+
+<%- include ("../partials/footer") %>

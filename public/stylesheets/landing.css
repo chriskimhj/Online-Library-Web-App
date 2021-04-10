@@ -1,0 +1,56 @@
+body{
+	background-image: url("https://i2.wp.com/walmerconvenience.com/wp-content/uploads/2016/03/wonderful-old-book-library-wide-high-definition-wallpaper-for-desktop.jpg"); 
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+html{
+	height: 100%;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+	padding: 2%;
+	opacity: 0;
+}
+
+h3 {
+	font-size: 25px;
+	padding-top:1%;
+	padding-bottom: 3%;
+	opacity: 0;
+}
+
+hr{
+	width: 600px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	opacity: 0;
+}
+
+.linkBtn{
+	margin: 4% auto;
+	opacity:0;
+	width: 250px;
+}
+
+.show{
+	transition: opacity 2200ms;
+}
+
+.hide{
+	opacity:1;
+}
+
+#trademarkLetters{
+	text-decoration: overline;
+}
+
+#content{
+	text-align: center;
+	align-content: center;
+	margin: 25% 0;
+	text-shadow: 0px 4px 3px gray, 0px 5px 7px black;
+}

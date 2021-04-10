@@ -1,0 +1,39 @@
+<%- include ("../partials/header") %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/show.css">
+
+<div class="container showContent">
+	<div class="well">
+		<div class="commentsRegion">
+			<form action="/books/<%- book._id %>/likes" method="POST">
+				<button class="btn btn-danger">Like &nbsp<i class="fas fa-heart"></i></button>
+				<span id="likesText">&nbsp <%-book.likes %> Likes</spans>
+				<a class="btn btn-primary pull-right" href="/books/<%-book._id%>/comments/new">Comment &nbsp<i class="fas fa-comment-alt"></i></a>
+			</form>
+		</div>
+		<hr>
+		<div class="commentsRegion">
+			<% book.comments.forEach(function(comment){ %>
+				<div class="row">
+					<div class="col-md-12">
+						<strong id="commentAuthor"><i class="far fa-user"></i>&nbsp<%- comment.author %></strong>
+						<span class="pull-right"></span>
+						<p><%- comment.text %> </p> 
+					</div>
+				</div>
+			<% }); %>
+		</div>
+	</div>
+	<div class="thumbnail">
+		<div class="caption-full bookRegion">
+			<h1><strong><%-book.name%></strong></h3>
+			<h2><em>by <%-book.author%></em></h4>
+			<p><%- book.content %></p>
+			<p>...</p>
+			<hr>
+			<p class="text-center">Read the Full Version at <a href="https://www.gutenberg.org/wiki/Main_Page">Gutenberg</a></p>
+		</div>
+	</div>
+</div>
+
+<%- include ("../partials/footer") %>

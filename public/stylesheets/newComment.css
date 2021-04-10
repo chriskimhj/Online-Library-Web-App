@@ -1,0 +1,36 @@
+body{
+	background-image: url("https://i.pinimg.com/originals/48/21/87/482187efe5e2bc7ad8bfa5730ab0b042.jpg"); 
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+	color: black;
+}
+
+html{
+	height: 100%;
+}
+
+hr{
+	width: 430px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+h2{
+	padding-bottom:10px;
+}
+
+.thumbnail{
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:5%;
+	padding-top:2%;
+}
+
+.commentText{
+	font-size:20px;
+}
+
+#commentBox {
+	margin-top: 4%;
+	padding: 5% 7%;
+}

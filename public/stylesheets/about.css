@@ -1,0 +1,40 @@
+body{
+	background-image: url("https://wallpaperplay.com/walls/full/1/c/7/71467.jpg"); 
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+	color: black;
+}
+
+html{
+	height: 100%;
+}
+
+hr{
+	width: 430px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.contentRegion{
+	margin-top: 4%;
+	width: 40%;
+}
+
+#titleAbout{
+	font-size:25px;
+}
+
+#webpageDesc{
+	line-height: 27px;
+	font-size: 17px;
+}
+
+#techDesc{
+	padding: 0 2%;
+	line-height: 27px;
+	font-size: 17px;
+}
+
+#techDetails{
+	padding: 1% 4%;
+}
