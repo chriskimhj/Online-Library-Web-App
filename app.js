@@ -9,7 +9,7 @@ var methodOverride = require("method-override");
 require('dotenv').config();
 const mongooseURL = process.env.MONGOOSE_URL
 
-mongoose.connect(mongooseURL, {
+mongoose.connect(String(mongooseURL), {
   useNewUrlParser: true,
   useCreateIndex:true,
   useUnifiedTopology: true
