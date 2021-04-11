@@ -7,8 +7,9 @@ var Comment    = require("./models/comments");
 var seedDB     = require("./seeds");
 var methodOverride = require("method-override");
 require('dotenv').config();
+const mongooseURL = process.env.MONGOOSE_URL
 
-mongoose.connect(process.env.MONGOOSE_URL, {
+mongoose.connect(mongooseURL, {
   useNewUrlParser: true,
   useCreateIndex:true,
   useUnifiedTopology: true
